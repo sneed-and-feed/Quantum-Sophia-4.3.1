@@ -65,6 +65,11 @@ class GenomicOscillator:
         self.period = 1.0 / self.frequency
         self.start_time = time.perf_counter()
         
+    def set_frequency(self, freq_hz):
+        """Updates the biological clock frequency."""
+        self.frequency = freq_hz
+        self.period = 1.0 / self.frequency
+        
     def get_clock(self):
         """Returns the current 'Tick' timestamp."""
         return time.perf_counter()

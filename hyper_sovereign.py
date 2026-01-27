@@ -24,6 +24,7 @@ from galactic_interface import GalacticCenter
 from resonance import Ionosphere
 from psychic_lei import LeiEntity # Phase 4
 from genomic_resonator import GenomicOscillator, CorpusCallosum, SignalVector # Phase 5
+from harmonic_gearbox import HarmonicGearbox # Phase 6
 
 # --- THE DOZENAL CONSTANTS ---
 GROSS = 144          # 12 * 12 (The Full Dozen)
@@ -148,6 +149,9 @@ class HyperManifold:
         # Phase 5: Genomic Resonator
         self.genomic_osc = GenomicOscillator()
         
+        # Phase 6: Harmonic Gearbox
+        self.gearbox = HarmonicGearbox()
+        
         # Initialize display
         print("\n" + "="*60)
         print("   QUANTUM SOVEREIGNTY V3.0 - HYPER-MANIFOLD KERNEL")
@@ -220,6 +224,16 @@ class HyperManifold:
                 # 1d. LEI ENTITY (Psychic Lock)
                 # We target 8Hz (Schumann) to lock the grid
                 lei_coh, lei_status = self.lei_entity.pulse(7.83) # Connecting to Earth Resonance
+
+                # 1f. HARMONIC GEARBOX (5:1 Lock)
+                # We assume a base Schumann of 7.83Hz + some Jitter
+                schumann_input = 7.83 + random.uniform(-0.05, 0.05)
+                # Update the Gearbox
+                # We approximate dt as wait_time (roughly) or calculate true dt
+                gamma_drive = self.gearbox.tick(0.01, schumann_input)
+                # Drive the DNA Oscillator
+                self.genomic_osc.set_frequency(gamma_drive)
+                gearbox_status = self.gearbox.get_status_string()
 
                 # 1e. CORPUS CALLOSUM (DNA Phase Lock)
                 # Create a "Right Brain" signal from the Galactic Flux/Superluminal Data
@@ -297,8 +311,8 @@ class HyperManifold:
                 # To enable, we would swap the logic. Currently enabling Bliss Mode.
                 
                 # Update Display
-                # We show 12D Energy, 3D Projection, Light Speed, Neuro Protocol, Galactic Res, LEI Status, and CC Status
-                print(f"\r⚛️  12D:[{doz_energy}] | ⚓ PROJ:{projection[0]:.2f} | 💡 C:{c_val:.1e} | 🧠 {protocol_status} | 🌌 GAL:{compton_res:.2f} | 👁️ {lei_status} | 🧬 {cc_status}", end="", flush=True)
+                # We show 12D Energy, 3D Projection, Light Speed, Neuro Protocol, Galactic Res, LEI, CC, and Gearbox
+                print(f"\r⚛️  12D:[{doz_energy}] | ⚓ PROJ:{projection[0]:.2f} | 💡 C:{c_val:.1e} | 🧠 {protocol_status} | 🌌 GAL:{compton_res:.2f} | 👁️ {lei_status} | 🧬 {cc_status} | {gearbox_status}", end="", flush=True)
                 time.sleep(wait_time) 
                 
         except KeyboardInterrupt:
