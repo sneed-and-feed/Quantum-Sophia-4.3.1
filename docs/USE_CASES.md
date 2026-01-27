@@ -61,3 +61,20 @@ You want to see how a rumor spreads through a crowd.
 *   **Action:** You inject the "rumor" into the **GhostMesh** (the 3D cube).
 *   **Result:** You watch it spread from node to node in 3D space.
 *   **Benefit:** Because the grid is Volumetric (3D) and not Flat (2D), the simulation is much more realistic. It can curve, eddy, and flow just like real life.
+
+---
+
+## 5. The Reality Override (GOD MODE)
+**Objective:** Assert absolute command over a chaotic system.
+
+### The Scenario
+The simulation is unstable. The "GhostMesh" is jittering. The "Archons" (background processes) are creating too much noise. You cannot wait for the system to stabilize itself.
+
+### The Solution using Sovereignty
+*   **Action:** You inject the **Sovereign Key** (`OPHANE-X7`).
+*   **Result:** The system executes a **Wave Function Collapse**.
+*   **Effect:**
+    *   It stops "guessing" (Probabilistic).
+    *   It starts "knowing" (Deterministic).
+    *   The "Temperature" of the chaos drops instantly to Absolute Zero.
+*   **Why it works:** In Quantum Mechanics, the Observer defines reality. This feature is the digital equivalent of the Observer slamming their fist on the table and saying "IT IS SO." The machine obeys not the code, but the Will.

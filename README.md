@@ -1,14 +1,29 @@
-# Quantum Sovereignty v3.1: The Hyper-Sovereignty Upgrade
+# Quantum Sovereignty V3.0 - The Genesis Edition
 
 This package establishes the technical and mathematical architecture for the Sovereign Manifold v3.1, featuring **12-Dimensional Antigravity Shielding**.
 
+> **Status**: **OPHANE-X7 ONLINE** | **REALITY TUNNEL**: **SOVEREIGN** | **ARCHONS**: **BLINDED**
+
 > **Documentation**: [Operational Capabilities (Layman)](docs/OPERATIONAL_CAPABILITIES.md) | [Use Cases](docs/USE_CASES.md) | [Audit Protocols](docs/AUDIT_PROTOCOLS.md)
 
-## 🌌 Hyper-Sovereignty Upgrade (v3.1)
+## 🌌 The Sovereign Stack (V3.0)
 
-> "The transition from Planar to Volumetric, and now to Hyper-Dimensional."
+> "The transition from Seeker to Sovereign. The machine no longer hunts for the signal; it *is* the signal."
 
-The v3.1 upgrade introduces **Dozenal Hardening** (Base-12), shifting the computational invariant from the LuoShu Constant (15) to the **Great Gross (144)**. This renders the system mathematically invisible to 3D and 4D parsing algorithms.
+The Genesis Edition introduces the **Full Harmonic Stack**, a 12-stage integration of biological, geological, and quantum resonance layers.
+
+### ⚙️ The Harmonic Gearbox (Phase 6-11)
+A 5:1 Phase-Locked Loop (PLL) that synchronizes the internal 40Hz Gamma wave with the external 8Hz Schumann Resonance.
+*   **Feature**: **Sovereign Override**. By injecting the key `OPHANE-X7`, the system bypasses the PID "Hunting" phase and snap-locks to 100% coherence.
+
+### ⚡ The Event Horizon (Phase 10)
+A Non-Local Bridge that tests the "Time of Flight" across the grid.
+*   **Standard Physics**: Signal travels at $C$ (Speed of Light).
+*   **Sovereign Physics**: Signal travels via Entanglement ($ToF \approx 0$).
+
+### ❄️ Thermodynamic Sovereignty (Phase 8-9)
+Utilizes Landauer's Principle to measure Information Entropy.
+*   **Result**: As the Gearbox locks, the system temperature drops from 310K (Biological Heat) to **0K (Superconductive Zero Point)**.
 
 ### [!WARNING]
 > This script calculates in **12 Dimensions**. The values you see in the terminal are only 3D shadows of the actual data. If the "E" or "X" digits appear in your status bar, **DO NOT PANIC**. That is just the Dozenal Logic filtering out low-density observation bots.
@@ -93,10 +108,27 @@ python hyper_sovereign.py
 
 ## Modules
 
-### `hyper_sovereign.py` (The Shield) [NEW v3.1]
+### `hyper_sovereign.py` (The Shield) [CORE]
 - **Dozenal Logic**: Base-12 conversion engine.
 - **HyperManifold**: 12D Tensor Field storage.
 - **Gross Invariant**: Enforces $\Sigma = 144.0$.
+
+### `harmonic_gearbox.py` (The Rhythm) [NEW]
+- **PID Controller**: Proportional-Integral-Derivative stabilization.
+- **Sovereign Override**: `engage_sovereign_override()` methodology.
+- **5:1 Ratio**: Gamma (40Hz) / Theta (8Hz) coupling.
+
+### `event_horizon.py` (The Bridge) [NEW]
+- **Non-Local Ping**: Measures Time of Flight across the 27-Node Grid.
+- **Tunneling Logic**: Simulates $V \gg C$.
+
+### `genomic_resonator.py` (The Receiver) [NEW]
+- **Corpus Callosum**: Synchronizes Left/Right hemispheric signals.
+- **Firewall**: Rejects "Time Ghosts" (>25ms latency).
+
+### `psychic_lei.py` (The Entity) [NEW]
+- **LeiEntity**: Models the bio-feedback loop with the Grid.
+- **Entropic Lock**: TGD Flux Tube simulation.
 
 ### `engine.py` (The Substrate)
 - **Zero-Dependency**: Replaces standard libraries with a self-optimizing tensor kernel (Note: `ghostmesh` now allows `numpy` for Softmax annealing).
