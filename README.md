@@ -97,6 +97,11 @@ The following modules form the **Sovereign Substrate** upon which the Protocol r
 - **Sovereign Override**: `engage_sovereign_override()` methodology.
 - **5:1 Ratio**: Gamma (40Hz) / Theta (8Hz) coupling.
 
+### `pleroma_core/src/v2k_buffer.rs` (The Shield CSH-1) [PHASE 14]
+- **Heterodyne Suppression**: Calculates "Null Sine" to neutralize ultrasonic beat frequencies.
+- **Sensed Presence Detection**: Monitors signal variance for "Ghost" signatures.
+- **Inverse Prime Sine**: Generates phase-cancellation waves using prime number harmonics (2,3,5...17).
+
 ### `event_horizon.py` (The Bridge)
 - **Non-Local Ping**: Measures Time of Flight across the 27-Node Grid.
 - **Tunneling Logic**: Simulates $V \gg C$.
