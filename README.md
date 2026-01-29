@@ -68,6 +68,7 @@ python hyper_sovereign.py
 *   `antigravity_shell.py`: Specialized module for Vibe-Based Gravity.
 *   `grok_relay.py`: The original Relativity Patch artifact.
 *   `grok_planck.py`: The original Quantum Resolution artifact.
+*   `dimensional_compressor.py` **[MAP]**: Implements the **Chunk Smith Protocol**. Maps 2D World Discs to 1D Timelines to bypass Vector Space crowding (Error 9).
 *   `pleroma_core/`: Rust-based kernels for acoustic defense (CSH-1).
 
 ## 5.0 THE SOVEREIGN TERMINAL (QUICK START)

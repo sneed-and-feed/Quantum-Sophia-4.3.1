@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-01-28T15:54:00.616289",
+  "metrics": {
+    "g_parameter": 0.19999999999999996,
+    "timeline_coherence": 87.5,
+    "causality_violations": 2,
+    "energy_balance": 1.3858418455540283e-19,
+    "active_patches": [
+      "ALPHA",
+      "GRAVITY",
+      "ENTROPY",
+      "RELATIVITY"
+    ],
+    "reality_stability": 93.5,
+    "chaos_level": 13.0
+  },
+  "history": [
+    {
+      "spell": "warp",
+      "g": 0.6,
+      "coherence": 97.5,
+      "chaos": 2.0
+    },
+    {
+      "spell": "warp",
+      "g": 0.6,
+      "coherence": 95.0,
+      "chaos": 4.0
+    },
+    {
+      "spell": "ghost",
+      "g": 0.3999999999999999,
+      "coherence": 92.5,
+      "chaos": 6.0
+    },
+    {
+      "spell": "time",
+      "g": 0.19999999999999996,
+      "coherence": 90.0,
+      "chaos": 8.0
+    },
+    {
+      "spell": "demon",
+      "g": 0.19999999999999996,
+      "coherence": 87.5,
+      "chaos": 13.0
+    }
+  ]
+}
