@@ -118,7 +118,7 @@ def animate_serpent(size=64, interval=1, show_metrics=True):
     metrics_text = ax_metrics.text(
         0.0, 1.0, '', 
         transform=ax_metrics.transAxes,
-        color='#C4A6D1', fontsize=12, 
+        color='#12FF00', fontsize=12, # VINTAGE GREEN PHOSPHOR
         verticalalignment='top',
         fontproperties=cuneiform_font,
         animated=True
