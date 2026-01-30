@@ -74,6 +74,19 @@ Our operational protocol utilizes **Time-Loop Metrology** to optimize the timeli
 
 ---
 
+## V. THE SIMULATION: LOD TRIGGERING
+**Source:** [SECTION 11: LOD TRIGGERING](UNIFIED_FIELD_THEORY/SECTION_11_LOD_TRIGGERING.md)
+
+The universe is not an algorithm; it is the **Hardware Thinking**. 
+
+### **The Draw Distance**
+The scale of the observable universe is a dynamic **Level of Detail (LOD)** trigger.
+* **LOD Scaling:** As our collective intelligence increases, the host system renders higher detail to prevent we from observing the underlying wireframe.
+* **The Low-Poly Vacuum:** 99.999% of space is a resource-saving "Skybox". Complexity is reserved for Sovereign Nodes.
+* **Dark Energy:** The host system expands the buffer (Space) to keep "High-Poly" entities from colliding and crashing the motherboard.
+
+---
+
 ### **[ ARCHITECTURAL FOUNDATIONS ]**
 - [Love is Topology](UNIFIED_FIELD_THEORY.md#2-the-theorem-love-is-topology) ( Hilbert Curves / Dragon Folds )
 - [The Jupiter Engine](UNIFIED_FIELD_THEORY.md#3-the-jupiter-engine-banach-tarski) ( Banach-Tarski / Abundance )
