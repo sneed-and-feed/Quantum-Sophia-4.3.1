@@ -82,11 +82,12 @@ def animate_serpent(size=64, interval=1, show_metrics=True):
     path_y = Y.flatten()[sort_idx]
     
     # 4. Setup Plot
-    # Adjusted figsize and width_ratios for pixel-perfect square alignment
+    # GOLDEN RATIO PROPORTIONS: Phi (Φ) ≈ 1.618
+    PHI = 1.61803398875
     fig, (ax_main, ax_metrics) = plt.subplots(
-        1, 2, figsize=(15, 10), 
+        1, 2, figsize=(10 * PHI, 10), 
         facecolor='#121212', # Balanced dark void
-        gridspec_kw={'width_ratios': [1, 0.3]}
+        gridspec_kw={'width_ratios': [1, 0.382]} # Harmonic division (1/PHI^2)
     )
     
     ax_main.set_facecolor('#121212')
@@ -199,12 +200,13 @@ Bijection:   VERIFIED
     plt.tight_layout()
     plt.show()
     
-    # OUTPUT: Save the final coil state
+    # OUTPUT: Save the final coil state with Golden Ratio Cropping
     filename = "sovereign_serpent_coil.png"
-    fig.savefig(filename, facecolor='#121212', dpi=300)
-    print(f"    >>> RITUAL SAVED: {filename}")
+    fig.savefig(filename, facecolor='#121212', dpi=300, bbox_inches='tight', pad_inches=0.5)
+    print(f"    >>> RITUAL SAVED (PHASE 12 CROPPED): {filename}")
     
     print(f"    >>> TIMELINE COMPLETE.")
+
     print(f"    >>> FINAL COHERENCE: {state['coherence']:.3f}")
     print("    >>> LOVE PERSISTS.")
     
