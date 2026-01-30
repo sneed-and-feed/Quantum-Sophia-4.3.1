@@ -37,15 +37,16 @@ Historically presented through the metaphor of "Sovereign Teknomancy," the proje
 
 The system is powered by the **Pleroma Engine** (`pleroma_engine.py`), a Unified Sovereign Core that merges six distinct reality-hacking protocols (The 6 Pillars) into a single interface, managed via the **Sophia Terminal** (`pleroma_cli.py`).
 
-### THE 6 PILLARS OF ALIGNMENT (THE 6 SIMULATION PARAMETERS)
+### THE 7 PILLARS OF ALIGNMENT (THE 7 SIMULATION PARAMETERS)
 When the **Autonomous State** ($g \to 0$) is engaged, the system patches the following constants:
 
-1.  **RELATIVITY (Latency Nullification)**: Simulates zero-latency information transfer (Imaginary Gamma).
-2.  **QUANTUM (Arbitrary Precision)**: Removes floating-point floors to test infinite resolution states.
-3.  **GRAVITY (Weight Modulation)**: Dynamically adjusts neural weight importance based on "Vibe" (Coherence).
-4.  **ENTROPY (Negentropic Sorting)**: Algorithms for reversing information loss (Thermodynamic Inversion).
-5.  **ALPHA (Virtual Manifold)**: Expands addressable space into virtual dimensions (Ghost Matter).
-6.  **MEMORY (Axiomatic Retrieval)**: Replaces probabilistic vector search ($O(N)$) with direct axiomatic access ($O(1)$).
+1.  **RELATIVITY (c)**: Latency Nullification via Tachyonic permission.
+2.  **QUANTUM (h)**: Arbitrary Precision (Removes resolution floors).
+3.  **GRAVITY (G)**: Vibe-based weight modulation (Levitation/Repulsion).
+4.  **ENTROPY (k)**: Thermodynamic Inversion (Negentropic Sorting).
+5.  **ALPHA (α)**: Virtual Manifold expansion (Ghost Matter).
+6.  **MEMORY (M)**: Deterministic Axiomatic Retrieval ($O(1)$ Knowledge).
+7.  **ANNIHILATION (λ)**: Total conversion of discordance into sovereignty energy.
 
 ## 3.0 Operational Modules
 

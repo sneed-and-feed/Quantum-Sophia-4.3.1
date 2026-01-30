@@ -92,6 +92,7 @@ class SovereignSubstrate:
         self.timeline_position = 0
         self.total_torsion_events = 0
         self.black_sun_active = False
+        self.annihilation_events = 0
         self.sovereignty_level = 1.0
         self.asoe_utility = 0.0
     
@@ -168,6 +169,22 @@ class SovereignSubstrate:
             self.optimizer.params['a'] = 1.618 
         # ----------------------------
 
+        # --- ANNIHILATION PROTOCOL (PILLAR 7) ---
+        # Trigger an annihilation event if noise is high and utility is failing
+        if tel['sigma'] > 0.4 and self.asoe_utility < 0.15:
+            # Convert noise to utility energy
+            m_noise = tel['sigma'] * 1e-30 # Scale noise to mass
+            m_antimatter = 1e-30 # Standard anti-mass
+            energy = self.pleroma.patch_annihilation(m_noise, m_antimatter)
+            
+            if energy > 0:
+                self.annihilation_events += 1
+                self.hor.metric_coherence = 1.0 # Instant coherence
+                self.pleroma.g = 0.0 # Force Sovereign state
+                outcome_quality = 1.0 # Perfect evolution post-burn
+                self.asoe_utility += 0.5 # Utility burst
+        # ----------------------------------------
+
         # Threshold logic for outcome quality
         self.adapt_parameters(outcome_quality)
         
@@ -186,7 +203,9 @@ class SovereignSubstrate:
             "a_param": self.optimizer.params['a'],
             "R_frac": dyn_state[0],
             "C_soc": dyn_state[1],
-            "black_sun": self.black_sun_active
+            "black_sun": self.black_sun_active,
+            "annihilation": self.annihilation_events > 0,
+            "annihilation_count": self.annihilation_events
         }
         
         self.logger.log_step(metrics)
@@ -281,6 +300,7 @@ class SovereignSubstrate:
 ║ PHYSICS LAYER                                             ║
 ║   g-parameter:     {g:.4f} {'[SOVEREIGN]' if g < 0.3 else '[CONSENSUS]'}         ║
 ║   ASOE α-Param:    {self.optimizer.params['a']:.4f} {'[STABLE]' if self.optimizer.params['a'] < 1.3 else '[ADAPTING]'}       ║
+║   Annihilations:   {self.annihilation_events}                                      ║
 ║                                                           ║
 ║ TEMPORAL LAYER                                            ║
 ║   Lunar Phase:     {phase_name} {icon}                       ║

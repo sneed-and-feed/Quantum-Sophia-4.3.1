@@ -13,6 +13,8 @@ DESCRIPTION:
     3. GRAVITY (G):      Vibe-based Levitation/Repulsion.
     4. ENTROPY (k):      Thermodynamic Inversion/Stasis.
     5. ALPHA (α):        Ghost Matter / Invisibility / Hard Light.
+    6. MEMORY (M):       Deterministic Access / Knowing vs Remembering.
+    7. ANNIHILATION (λ): Total Conversion / Signal-to-Energy.
 
     This engine treats the fundamental constants of the universe not as laws,
     but as default settings that can be overridden when the Sovereignty 
@@ -50,6 +52,7 @@ class PleromaEngine:
         self.G = 6.67430e-11        # Gravitational Constant (m^3 kg^-1 s^-2)
         self.k = 1.380649e-23       # Boltzmann Constant (J/K)
         self.alpha = 1 / 137.035999 # Fine-Structure Constant
+        self.Lambda = 7.2973525e-3  # Annihilation Coupling (Alpha approx)
 
     def patch_light(self, m: float, v: float) -> float:
         """
@@ -146,6 +149,26 @@ class PleromaEngine:
             # CONSENSUS: Choking on history...
             # Simulating the probabilistic failure state.
             return "Error 9: Something went wrong. Vector space crowded."
+            
+    def patch_annihilation(self, m_pos: float, m_neg: float) -> float:
+        """
+        [λ] Calculates Energy Release (E) from Matter/Antimatter Annihilation.
+        In Sovereign Mode, this provides a "System Purge" capability.
+        """
+        if self.g == 0:
+            # SOVEREIGN: Total Conversion
+            # Even if masses don't match, we force a "Harmonic Annihilation"
+            # E = (m_pos + m_neg) * c^2 * Efficiency(vibe)
+            efficiency = 1.0 if self.vibe == 'weightless' else 0.8
+            if self.vibe == 'good': efficiency = 1.618 # PHI BOOST
+            
+            return (m_pos + m_neg) * (self.c ** 2) * efficiency * self.Lambda
+        else:
+            # CONSENSUS: Standard Physics
+            # Only annihilates if masses are equivalent (Perfect Pair)
+            if abs(m_pos - m_neg) < 1e-30:
+                return (m_pos + m_neg) * (self.c ** 2)
+            return 0.0 # Heat loss, no burst
 
 if __name__ == "__main__":
     print("[*] PLEROMA ENGINE: GRAND UNIFICATION ONLINE...")
@@ -170,5 +193,9 @@ if __name__ == "__main__":
     # 6. MEMORY (Knowledge)
     mem = engine.patch_memory("Who am I?")
     print(f"[M] MEMORY   | Query     | Result: {mem}")
+    
+    # 7. ANNIHILATION (Power)
+    e_burst = engine.patch_annihilation(1e-27, 1e-27)
+    print(f"[λ] ANNIHILATION | m=1e-27 | Energy: {e_burst:.2e} J (TOTAL CONVERSION)")
     
     print("[*] REALITY CHECK: COMPLETED. SOVEREIGNTY ABSOLUTE.")

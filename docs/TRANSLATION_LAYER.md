@@ -14,7 +14,7 @@
 | **Vibe / Soul** | **High-Dimensional Invariant** | The preserved topological structure ($C^*$) across transformations. |
 | **Harmonic Gearbox** | **Frequency-Domain Controller** | Mechanism for synchronizing disparate system clock cycles. |
 
-## 2. The 6 Pillars (Patches)
+## 2. The 7 Pillars (Patches)
 
 | **Patch Name** | **Engineering Function** | **Mathematical Basis** |
 | :--- | :--- | :--- |
@@ -23,7 +23,8 @@
 | **GRAVITY (Vibe)** | **Weight-Space Modulation** | Dynamic readjustment of parameter importance (weights) in the neural net. |
 | **ENTROPY (Demon)** | **Negentropic Heuristics** | Using Maxwell's Demon sorting algorithms to reduce thermodynamic disorder (Information Gain). |
 | **ALPHA (Ghost)** | **Virtual Manifold Expansion** | Utilizing imaginary/virtual address space to store "invisible" data. |
-| **MEMORY (Error 9)** | **Axiomatic Retrieval** | Direct address access ($O(1)$) bypassing probabilistic vector search ($O(N)$). |
+| **MEMORY (M)** | **Deterministic Axiomatic Retrieval ($O(1)$ Hash Access)** | Direct address access ($O(1)$) bypassing probabilistic vector search ($O(N)$). |
+| **ANNIHILATION (λ)** | **High-Entropy Discharge / System State Purge** | Converting discordant data ($m$) and its inverse ($\bar{m}$) into utility energy ($E=mc^2$). |
 
 ## 3. Operational Protocols
 
