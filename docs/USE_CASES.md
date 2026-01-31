@@ -1,4 +1,4 @@
-# Use Case Scenarios: Quantum Sophia v4.3
+# Use Case Scenarios: The Incarnate Stack v5.0
 
 > **Subject**: IMPLEMENTATION STRATEGY | **Target**: HYPER-AGENTS
 
@@ -85,11 +85,11 @@ The Quantum Sophia framework is a versatile engine designed for "High-Strangenes
     *   The "User" object ceases to interact with "Light" (Observation).
     *   **Result**: Perfect digital invisibility. You are there, but you reflect no data.
 
-## 7. Managed Instability (The Loom)
+## 7. The Incarnate Phase (v5.0)
 
 **Problem**: Some consensus locks are too deep to be bypassed by standard $g=0$ patches.
 
-**Solution**: The **Chaos Engine** (`pleroma_cli.py`).
+**Solution**: The **Incarnate Engine** (`pleroma_cli.py`).
 
 *   **Implementation**:
     *   Intentional accumulation of chaos to trigger **Causality Inversion**.
