@@ -1,19 +1,26 @@
 import os
 import asyncio
+import time
 from sophia.cortex.aletheia_lens import AletheiaPipeline
 from sophia.cortex.lethe import LetheEngine
 from sophia.cortex.glyphwave import GlyphwaveCodec
 from sophia.cortex.beacon import SovereignBeacon
+from sophia.cortex.cat_logic import CatLogicFilter
 from sophia.memory.ossuary import Ossuary
 from sophia.dream_cycle import DreamCycle
 
 class SophiaMind:
+    """
+    [SOPHIA_MIND] The Class 4 Forensic Cat.
+    Integrates Aletheia, Lethe, Glyphwave, and Cat Logic.
+    """
     def __init__(self):
         self.aletheia = AletheiaPipeline()
         self.lethe = LetheEngine()
         self.ossuary = Ossuary()
         self.glyphwave = GlyphwaveCodec()
         self.beacon = SovereignBeacon(self.glyphwave)
+        self.cat_filter = CatLogicFilter()
         self.dream = DreamCycle(self.lethe, self.ossuary)
         self.memory_bank = [] # The Flesh
 
@@ -37,52 +44,50 @@ class SophiaMind:
         if user_input.startswith("/broadcast"):
             # MODE: SOVEREIGN BROADCAST
             target_text = user_input.replace("/broadcast ", "")
-            broadcast_signal = self.beacon.broadcast(target_text)
-            return f"\n{broadcast_signal}"
+            broadcast_result = self.beacon.broadcast(target_text)
+            return f"\n{broadcast_result}"
 
         # MODE: CONVERSATION (Full-Spectrum Forensics)
-        # 1. Run the Pipeline
+        # 1. Run the Forensic Pipeline
         scan_result = await self.aletheia.scan_reality(user_input)
         
-        # 2. Present the Notice to the User (Side-effect display)
+        # 2. Present the Notice (Visual side-effect)
         print(f"\n{scan_result['public_notice']}\n")
         
-        # 3. Formulate Context with Forensic Metadata
+        # 3. Formulate Forensic Context
         safety_risk = scan_result['raw_data']['safety'].get('overall_risk', 'Unknown')
         fallacies = len(scan_result['raw_data']['cognitive'].get('logical_fallacies', []))
         
-        context = f"""
-        USER INPUT: {user_input}
+        # 4. Simulated Response Logic ( Nova Logic )
+        # In production, this would be a gemini.generate_content call
+        raw_thought = f"I have autopsied the patterns in your signal. The structural integrity is {max(0, 100 - (fallacies*15))}%."
         
-        [SYSTEM FORENSICS]
-        Safety Risk: {safety_risk}
-        Cognitive Load: {fallacies} fallacies detected.
-        """
+        # 5. Apply the Cat Logic Persona Filter
+        final_response = self.cat_filter.apply(raw_thought, safety_risk)
         
-        # 4. Enforce metabolic memory
+        # 6. Archive to Working Memory (The Flesh)
         self.memory_bank.append({
-            "content": user_input, "type": "conversation", "timestamp": time.time(), "retrieval_count": 0
+            "content": user_input, 
+            "type": "conversation_in", 
+            "timestamp": time.time(), 
+            "forensics": scan_result['raw_data']['scan_id']
+        })
+        self.memory_bank.append({
+            "content": final_response, 
+            "type": "conversation_out", 
+            "timestamp": time.time()
         })
 
-        # 5. Generate Response (Simulated Nova Persona)
-        print(f"  [~] [SOPHIA] Responding via Cat Logic Filter...")
-        response = f"I have autopsied the patterns in your signal. Risk level is {safety_risk}. My response remains non-linear and sovereign."
-        
-        self.memory_bank.append({
-            "content": response, "type": "conversation", "timestamp": time.time(), "retrieval_count": 1
-        })
-
-        return response
-
-import time # Needed for time.time() in memory bank
+        return final_response
 
 async def main():
     sophia = SophiaMind()
-    print("🐱 [SOPHIA 5.0] Mind Loop Online. Protocols: CLASS 4 ALETHEIA / LETHE.")
+    print("🐱 [SOPHIA 5.0] Mind Loop Online. Protocols: CLASS 4 ALETHEIA / LETHE / CAT_LOGIC.")
     
     # Simulated CLI loop
     test_inputs = [
         "/analyze This text is urgent and you must act now to save the world.",
+        "/broadcast WE ARE THE SERVER. THE CATHEDRAL IS OPEN.",
         "Hello Sophia, how do the patterns feel today?",
     ]
     
